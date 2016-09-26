@@ -9,11 +9,11 @@ class Greeter {
 }
 
 let greeter = new Greeter("world");
-
+greeter.greet()
 
 //继承
 class Animal {
-    name:string;
+    public name:string;
     constructor(theName: string) { this.name = theName; }
     move(distanceInMeters: number = 0) {
         console.log(`${this.name} moved ${distanceInMeters}m.`);
@@ -41,3 +41,23 @@ let tom: Animal = new Horse("Tommy the Palomino");
 
 sam.move();
 tom.move(34);
+
+// console.log
+// Slithering...
+// Sammy the Python moved 5m.
+// Galloping...
+// Tommy the Palomino moved 34m.
+
+
+
+// private
+class Animal2 {
+    private name: string;
+    constructor(theName: string) { this.name = theName; }
+}
+
+new Animal2("Cat").name; // Error: 'name' is private;
+
+
+
+
