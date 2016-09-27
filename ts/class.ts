@@ -51,12 +51,12 @@ tom.move(34);
 
 
 // private
-class Animal2 {
-    private name: string;
-    constructor(theName: string) { this.name = theName; }
-}
+// class Animal2 {
+//     private name: string;
+//     constructor(theName: string) { this.name = theName; }
+// }
 
-new Animal2("Cat").name; // Error: 'name' is private;
+// new Animal2("Cat").name; // Error: 'name' is private;
 
 
 
